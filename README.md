@@ -1,5 +1,18 @@
 # EverydayMarketNg
 
+## T0511-2 Group Code Workshop
+
+This repository is for the T0511-2 group code workshop, where we are implementing the Everyday Market app based on the Dresher book. Our goal is to build a modern Angular application that follows the book's guidance and best practices.
+
+### Practice Activities
+
+We are tracking our progress using practice activities from the Dresher book. Our code is currently caught up to Practice Activity 1.
+
+- Practice Activity 1: Project setup, basic app structure, and initial components
+- (Add more activities as we progress)
+
+---
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
 
 ## Development server
