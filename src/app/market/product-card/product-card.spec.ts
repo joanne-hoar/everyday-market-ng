@@ -13,7 +13,8 @@ describe('ProductCard', () => {
 
     fixture = TestBed.createComponent(ProductCard);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.componentRef.setInput('product', { id: 1, title: 'Test Product' });
+    fixture.detectChanges();
   });
 
   it('should create', () => {
