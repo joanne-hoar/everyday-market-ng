@@ -1,1 +1,6 @@
-<p>product-list works!</p>
+    <!-- Modern @for syntax: Iterates over products array -->
+    <!-- track product.id: Tells Angular how to identify each item for efficient updates -->
+    @for (product of products(); track product.id) {
+      <!-- [product]="product" passes data to child component -->
+       <app-product-card [product]="product" />
+    }

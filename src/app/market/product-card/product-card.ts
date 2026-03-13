@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Product } from '../../shared/models/product';
 
 @Component({
   selector: 'app-product-card',
@@ -6,4 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './product-card.html',
   styleUrl: './product-card.css',
 })
-export class ProductCard {}
+export class ProductCard {
+
+  // required input from ProdcutList (parent)
+  product = input.required<Product>();
+
+}

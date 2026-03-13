@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Product } from '../../shared/models/product';
+import { ProductCard} from '../product-card/product-card';
 
 @Component({
   selector: 'app-product-list',
-  imports: [],
+  imports: [ProductCard],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css',
 })
-export class ProductList {}
+export class ProductList {
+  // list of products passed in from parent ProductsPage
+  products = input.required<Product[]>();
+}
