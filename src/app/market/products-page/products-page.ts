@@ -13,4 +13,9 @@ export class ProductsPage {
 { id: 1, title: 'Laptop' },
 { id: 2, title: 'Tablet' }
 ];
+
+// catching propogated event
+addToCart(id: number){
+  alert(id);
+}
 }

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Product } from '../../shared/models/product';
 
 @Component({
@@ -12,4 +12,9 @@ export class ProductCard {
   // required input from ProdcutList (parent)
   product = input.required<Product>();
 
+  added = output<number>();
+  
+  addToCart(){
+    this.added.emit(this.product().id);
+  }
 }

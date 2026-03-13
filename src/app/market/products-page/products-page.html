@@ -2,4 +2,4 @@
 
 <!-- TODO: CAtegory Menu -->
 
-<app-product-list [products]="products"></app-product-list>
+<app-product-list [products]="products" (added)="addToCart($event)"></app-product-list>

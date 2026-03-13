@@ -2,5 +2,5 @@
     <!-- track product.id: Tells Angular how to identify each item for efficient updates -->
     @for (product of products(); track product.id) {
       <!-- [product]="product" passes data to child component -->
-       <app-product-card [product]="product" />
+       <app-product-card [product]="product" (added)="addToCart($event)"/>
     }
